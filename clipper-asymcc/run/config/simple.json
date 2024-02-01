@@ -1,0 +1,20 @@
+{
+    "ec_k": 6,
+    "worker_ips": [
+        "172.24.128.1",
+        "172.24.128.2"
+    ],
+    "local_ip": "172.24.128.1",
+    "workerThrd_num": 1,
+    "input_num": 100,
+    "encoder": "linear",
+    "decoder": "distill",
+    "decoder_model": "iRevNet48x64",
+    "dataset": "cifar10",
+    "model": "irevnet18",
+    "model_checkpoint": "/root/i-NeDD/model/checkpoint/train/cifar10/i-revnet-55-para.t7",
+    "decoder_checkpoint": "/root/i-NeDD/model/checkpoint/distill/models/iRevNet18/S_iRevNet48x64_T_iRevNet18_cifar10/iRevNet48x64_best-para.pth",
+    "fail_rate": 0.15,
+    "query_rate": 150,
+    "output_path":"./output.txt"
+}

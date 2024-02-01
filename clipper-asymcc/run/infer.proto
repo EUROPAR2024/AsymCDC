@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option cc_generic_services = true;
+
+service GrpcService {
+    rpc infer (InferRequest) returns (InferResponse) {}
+}
+
+message InferRequest {
+    int32 id = 1;
+    bytes input = 2;
+    int32 port = 3;
+    string identity = 4;
+};
+
+message InferResponse {
+    string output = 1;
+};
