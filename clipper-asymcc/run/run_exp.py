@@ -72,8 +72,8 @@ def StopWorker():
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='i-NeDD clipper_deploy arguments')
-    parser.add_argument("--conf", type=str, default="/root/i-NeDD/clipper-inedd/run/config/simple.json", help="Path of the config file")
+    parser = argparse.ArgumentParser(description='AsymCC clipper_deploy arguments')
+    parser.add_argument("--conf", type=str, default="/root/AsymCC/clipper-asymcc/run/config/simple.json", help="Path of the config file")
     parser.add_argument("--path", type=str, default="/root/datatest/cifar10/test", help="Path of the input file")
     
     args = parser.parse_args()
